@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.logo-container {
+  height: 12vh;
+  position: relative;
+}
+
+.logo-container img {
+  position: absolute;
+  top: 35%;
+  left: 10%;
+}
+
+.hero-container {
+  width: 100%;
+  height: 36vh;
+  background: url('./images/hero-mobile.jpg') center center / cover no-repeat;
+}
+
+.bottom-container {
+  background: url('./images/bg-pattern-desktop.svg');
+  height: 52vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0 50px 0 50px;
+}
+
+.bottom-container h1 {
+  font-size: 5rem;
+  letter-spacing: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 50px 0 20px 0;
+  line-height: 1.2;
+}
+
+.bottom-container h1 span {
+  color: hsl(0, 36%, 70%);
+  font-weight: 300;
+}
+
+.bottom-container p {
+  text-align: center;
+  line-height: 1.5;
+  font-size: 1.6rem;
+  color: hsl(0, 36%, 70%);
+  margin: 0 0 30px 0;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+}
+
+input[type='email'] {
+  width: 300px;
+  padding: 15px 0 15px 25px;
+  font-size: 1.5rem;
+  color: hsl(0, 36%, 70%);
+  border-radius: 30px;
+  border: 1px solid hsl(0, 36%, 70%);
+  background-color: transparent;
+}
+
+button {
+  margin-left: -50px;
+  border-radius: 30px;
+  width: 55px;
+  border: 0;
+  box-shadow: 0 3px 5px 0 rgba(249, 123, 98, 0.5);
+  transition: box-shadow 0.5s;
+  background-color: hsl(0, 36%, 70%);
+}
+
+button:active {
+  box-shadow: 0 1px 3px 0 rgba(249, 98, 98, 0.5);
+}
+
+@media only screen and (max-width: 1440px) {
+}
