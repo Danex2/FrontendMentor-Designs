@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+
+.price-grid-container {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.price-grid-top, .price-grid-left, .price-grid-right {
+    padding: 0 30px 30px 30px;
+}
+
+.price-grid-top h2 {
+    margin-top: 30px;
+    color: hsl(179, 62%, 43%);
+    font-weight: 400;
+}
+
+.price-grid-top p:nth-child(2) {
+    color: hsl(71, 73%, 54%);
+    font-size: 1.1rem;
+    margin-top: 30px;
+}
+
+.price-grid-top p:nth-child(3) {
+    color: hsl(218, 22%, 67%);
+    margin-top: 30px;
+    line-height: 2;
+    font-size: 1rem;
+}
+
+.price-grid-left {
+    background-color: hsl(179, 62%, 39%)
+}
+
+.price-grid-left h2 {
+    font-weight: 400;
+    margin-top: 30px;
+    color: white;
+}
+
+.price-grid-left-price {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.price-grid-left-price .dollar {
+    font-size: 2.2rem;
+    color: white;
+    margin-right: 15px;
+}
+
+.price-grid-left-price span:nth-child(2) {
+    color: white;
+    opacity: 0.6;
+    font-weight: 400;
+}   
+
+.price-grid-left p:nth-child(3) {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 400;
+}
+
+.price-grid-left button {
+    margin-top: 60px;
+    width: 100%;
+    padding: 15px 100px;
+    border-radius: 5px;
+    border: 0;
+    font-size: 1.2rem;
+    background-color: hsl(71, 73%, 54%);
+    color: white;
+    box-shadow: 0 3px 10px rgba(0, 0,0, 0.3);
+    transition: box-shadow 0.3s;
+}
+
+.price-grid-left button:active {
+    box-shadow: 0 3px 3.5px rgba(0, 0,0, 0.2);
+}
+
+.price-grid-right {
+    background-color: hsl(179, 62%, 43%);
+}
+
+.price-grid-right h2 {
+    margin-top: 30px;
+    color: white;
+    font-weight: 400;
+}
+
+.price-grid-right ul {
+    margin-top: 30px;
+}
+
+.price-grid-right li {
+    list-style: none;
+    margin-top: 10px;
+    color: white;
+    font-weight: 400;
+    opacity: 0.7;
+}
+
+@media only screen and (min-width: 1440px) {
+    .price-grid-container {
+       grid-template-areas: "price-top price-top"
+                            "price-left price-right";
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+    }
+    
+    .price-grid-top, .price-grid-left, .price-grid-right {
+        padding: 40px 75px 70px 70px;
+        grid-area: price-top;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .price-grid-left {
+        grid-area: price-left;
+    }
+
+    .price-grid-right {
+        grid-area: price-right;
+    }
+
+    /*.price-grid-left, .price-grid-right {
+        padding: 40px 75px 70px 70px;
+    }*/
+
+    .price-grid-top h2 {
+        font-size: 2.4rem;
+    }
+    .price-grid-top p:nth-child(2) { 
+        font-size: 1.8rem;
+    }
+
+    .price-grid-top p:nth-child(3) { 
+        font-size: 1.5rem;
+        width: 65%;
+        opacity: 0.7;
+    }
+
+    .price-grid-left h2 {
+        font-size: 2rem;
+    }
+
+    .price-grid-left-price .dollar {
+        font-size: 3rem;
+    }
+
+    .price-grid-left p:nth-child(3) {
+        font-size: 1.5rem;
+    }
+
+    .price-grid-left-price span:nth-child(2) {
+        font-size: 1.4rem;
+    }
+
+    .price-grid-right h2 {
+        font-size: 2rem;
+    }
+
+    .price-grid-right li {
+        font-size: 1.2rem;
+    }
+  }
